@@ -1,16 +1,16 @@
 # OpenCore EFI for AMD Laptops (updated to Monterey 12.4)
 
-**OpenCore version: 0.7.4**
+**OpenCore version: 0.8.8**
 
 **macOS: Monterey 12.4**
 
 ![Monterey 12.4 Overview](images/monterey.png)
 
-My laptop is **ASUS Vivobook A412D**
+My laptop is **Lenovo V15 Gen 2**
 - CPU: AMD Ryzen 5 3500U
 - Display: AMD Radeon Vega 8
-- Network: Intel wireless 8265
-- Audio: AMD K17.1
+- Network: Intel wireless
+- Audio: AMD
 
 **Note**: 
 - Please change MLB/ROM/Serial Number/UUID.
@@ -25,7 +25,7 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │   │   └── BOOTx64.efi
 │   └── OC
 │       ├── ACPI
-│       │   └── SSDT-EC-USBX-DESKTOP.aml
+│       │   └── SSDT-EC-USBX-AMD.aml
 │       ├── Bootstrap
 │       │   └── Bootstrap.efi
 │       ├── config.plist
@@ -34,22 +34,32 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │       │   ├── OpenCanopy.efi
 │       │   └── OpenRuntime.efi
 │       ├── Kexts
-│       │   ├── itlwm.kext
-│       │   ├── HeliPort.dmg
-│       │   ├── AMDRyzenCPUPowerManagement.kext
-│       │   ├── AppleALC.kext
-│       │   ├── AppleMCEReporterDisabler.kext
-│       │   ├── Lilu.kext
-│       │   ├── NVMeFix.kext
-│       │   ├── SMCAMDProcessor.kext
-│       │   ├── VirtualSMC.kext
-│       │   ├── VoodooPS2Controller.kext
-│       │   └── WhateverGreen.kext
+│       │   ├──ACPIMonitor.kext
+│       │   ├──AmdCPUMonitor.kext
+│       │   ├──AppleALC.kext
+│       │   ├──AppleMCEReporterDisabler.kext
+│       │   ├──FakeSMC.kext
+│       │   ├──HeliPort.dmg
+│       │   ├──Lilu.kext
+│       │   ├──NVMeFix.kext
+│       │   ├──RadeonMonitor.kext
+│       │   ├──RestrictEvents.kext
+│       │   ├──SMC-Spoof.kext
+│       │   ├──VoodooHDA.kext
+│       │   ├──VoodooI2C.kext
+│       │   ├──VoodooI2CELAN.kext
+│       │   ├──VoodooInput.kext
+│       │   ├──VoodooPS2Controller.kext
+│       │   ├──WhateverGreen.kext
+│       │   ├──XLNCUSBFix.kext
+│       │   ├──itlwm.kext
 │       ├── OpenCore.efi
 │       └── Resources
 │           ├── Font
 │           ├── Image
 │           └── Label
+|       ├── Tools
+│       │   ├── OpenShell.efi
 
 ```
 ## Bonus
