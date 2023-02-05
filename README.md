@@ -25,7 +25,15 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │   │   └── BOOTx64.efi
 │   └── OC
 │       ├── ACPI
-│       │   └── SSDT-EC-USBX-AMD.aml
+│       │   ├──SSDT-CPUR.aml (*)
+│       │   ├──SSDT-EC-USBX-AMD.aml (*)
+│       │   ├──SSDT-EC-USBX-DESKTOP.aml (*)
+│       │   ├──SSDT-EC.aml
+│       │   ├──SSDT-HPET.aml
+│       │   ├──SSDT-PLUG.aml
+│       │   ├──SSDT-PMC.aml
+│       │   ├──SSDT-USB-Reset.aml (*)
+│       │   ├──SSDT-USBX.aml
 │       ├── Bootstrap
 │       │   └── Bootstrap.efi
 │       ├── config.plist
@@ -62,5 +70,6 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │       │   ├── OpenShell.efi
 
 ```
+(*) Disabled for custom laptop configurations
 ## Bonus
 ![A SwiftUI App](images/app.png)
