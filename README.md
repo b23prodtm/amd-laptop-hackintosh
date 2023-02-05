@@ -25,15 +25,7 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │   │   └── BOOTx64.efi
 │   └── OC
 │       ├── ACPI
-│       │   ├──SSDT-CPUR.aml (*)
-│       │   ├──SSDT-EC-USBX-AMD.aml (*)
-│       │   ├──SSDT-EC-USBX-DESKTOP.aml (*)
-│       │   ├──SSDT-EC.aml
-│       │   ├──SSDT-HPET.aml
-│       │   ├──SSDT-PLUG.aml
-│       │   ├──SSDT-PMC.aml
-│       │   ├──SSDT-USB-Reset.aml (*)
-│       │   ├──SSDT-USBX.aml
+│       │   └── SSDT-EC-USBX-DESKTOP.aml
 │       ├── Bootstrap
 │       │   └── Bootstrap.efi
 │       ├── config.plist
@@ -42,25 +34,17 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │       │   ├── OpenCanopy.efi
 │       │   └── OpenRuntime.efi
 │       ├── Kexts
-│       │   ├──ACPIMonitor.kext
-│       │   ├──AmdCPUMonitor.kext
-│       │   ├──AppleALC.kext
-│       │   ├──AppleMCEReporterDisabler.kext
-│       │   ├──FakeSMC.kext
-│       │   ├──HeliPort.dmg
-│       │   ├──Lilu.kext
-│       │   ├──NVMeFix.kext
-│       │   ├──RadeonMonitor.kext
-│       │   ├──RestrictEvents.kext
-│       │   ├──SMC-Spoof.kext
-│       │   ├──VoodooHDA.kext
-│       │   ├──VoodooI2C.kext
-│       │   ├──VoodooI2CELAN.kext
-│       │   ├──VoodooInput.kext
-│       │   ├──VoodooPS2Controller.kext
-│       │   ├──WhateverGreen.kext
-│       │   ├──XLNCUSBFix.kext
-│       │   ├──itlwm.kext
+│       │   ├── itlwm.kext
+│       │   ├── HeliPort.dmg
+│       │   ├── AMDRyzenCPUPowerManagement.kext
+│       │   ├── AppleALC.kext
+│       │   ├── AppleMCEReporterDisabler.kext
+│       │   ├── Lilu.kext
+│       │   ├── NVMeFix.kext
+│       │   ├── SMCAMDProcessor.kext
+│       │   ├── VirtualSMC.kext
+│       │   ├── VoodooPS2Controller.kext
+│       │   └── WhateverGreen.kext
 │       ├── OpenCore.efi
 │       └── Resources
 │           ├── Font
@@ -68,6 +52,5 @@ There's no audio and video supported, but I mainly use this Hackintosh for iOS d
 │           └── Label
 
 ```
-(*) DISABLED for custom ACPI Patches to work
 ## Bonus
 ![A SwiftUI App](images/app.png)
